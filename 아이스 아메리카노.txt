@@ -1,0 +1,9 @@
+class Solution {
+    
+    public final static int iceCoffee = 5500;
+    
+    public static int[] solution(final int money) {
+        int[] answer = {money / iceCoffee, money % iceCoffee};
+        return answer;
+    }
+}
