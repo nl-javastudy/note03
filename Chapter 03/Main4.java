@@ -1,5 +1,5 @@
 import java.util.*;
-// Wrapper 클래스 optional = null인 값을 참조해도 NullPointerException이 발생하지 않도록 값을 래퍼로 감싸주는 타입
+// Wrapper 클래스 optional = null인 값을 참조해도 NullPointerException이 발생하지 않도록 값을 래퍼로 감싸주는 타입 (호출 전에 null 체크를 자동으로 해줌)
 class ErrorTest2{
     private Optional<String> a = Optional.empty(); //비어있는 optional 객체 생성
     void printLen() {
