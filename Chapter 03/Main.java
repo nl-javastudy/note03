@@ -1,4 +1,4 @@
-// NullPointerException은 주소가 없는 null을 참조하였을 때 발생하는 에러이다.
+// NullPointerException은 주소가 없는 null인 객체를 참조하려고 할 때 발생하는 에러이다.
 class ErrorTest{
     private String a;
     void printLen(){
