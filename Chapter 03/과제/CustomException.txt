@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class myException {
+    public static void main(String[] args) {
+        throwChecked(); // java: unreported exception MyCheckedException; must be caught or declared to be thrown
+        throwUnchecked(); // Exception in thread "main" MyUncheckedException: Unchecked
+    }
+
+    public static void throwChecked() throws MyCheckedException{
+        throw new MyCheckedException("Checked");
+    }
+
+    public static void throwUnchecked() throws MyUncheckedException{
+        throw new MyUncheckedException("Unchecked");
+    }
+}
+
+class MyCheckedException extends Exception{
+    public MyCheckedException(String msg){
+        super(msg);
+    }
+}
+
+class MyUncheckedException extends RuntimeException{
+    public MyUncheckedException(String msg){
+        super(msg);
+    }
+}
