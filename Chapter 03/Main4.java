@@ -1,6 +1,6 @@
 import java.util.*;
 // Wrapper 클래스 optional = null인 값을 참조해도 NullPointerException이 발생하지 않도록 값을 래퍼로 감싸주는 타입 (호출 전에 null 체크를 자동으로 해줌)
-class ErrorTest2{
+class Test2{
     private Optional<String> a = Optional.empty(); //비어있는 optional 객체 생성
     void printLen() {
         System.out.println(a.map(str -> str.length()).orElse(0)); // map = Optional 객체 내부의 값을 변환하여 결과를 새로운 Optional 객체로 반환.
@@ -16,7 +16,7 @@ class ErrorTest2{
 
 public class Main4 {
     public static void main(String[] args) {
-        ErrorTest2 e = new ErrorTest2();
+        Test2 e = new Test2();
         e.printLen();
         e.printStr();
         System.out.println(e.isA());
