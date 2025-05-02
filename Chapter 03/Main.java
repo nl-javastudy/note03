@@ -1,5 +1,5 @@
 // NullPointerException은 주소가 없는 null인 객체를 참조하려고 할 때 발생하는 에러이다.
-class ErrorTest{
+class Test{
     private String a;
     void printLen(){
         System.out.println(a.length());
@@ -15,7 +15,7 @@ class ErrorTest{
 
 public class Main {
     public static void main(String[] args) {
-        ErrorTest e = new ErrorTest();
+        Test e = new Test();
         e.printLen();
         // Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "this.a" is null
         e.printStr();
