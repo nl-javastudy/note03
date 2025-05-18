@@ -28,7 +28,7 @@
 - null 요소 저장 가능
 - 노드마다 포인터 필요하기에 메모리 사용량이 ArrayDeque보다 더 많음
 
-```
+```java
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -50,7 +50,8 @@ public class DequeList {
 - null 요소 추가 불가 (넣으려 하면 NullPointerException 발생)
 - Deque 인터페이스의 가장 일반적이고 빠른 구현체 (Deque를 사용할 때 대부분 ArrayDeque를 사용)
 
-```import java.util.ArrayDeque;
+```java
+import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class DequeArray {
